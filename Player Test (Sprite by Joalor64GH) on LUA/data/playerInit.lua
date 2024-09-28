@@ -1,5 +1,5 @@
 function onCreate() 
-    makeText("text", 0, 0, 0, "FNF Boyfriend Animation Test", 12);
+    makeText("text", 0, 0, 0, "FNF Player Animation Test", 12);
     addText("text");
 
     makeAnimationSprite("player", 0, 0, "player")
@@ -12,4 +12,22 @@ function onCreate()
     setSpriteProperty("player", "antialiasing", true)
 
     addSprite("player")
+end
+
+function onUpdate(elapsed)
+    if getPropertyFromClass('flixel.FlxG', "keys.justPressed.LEFT") then
+        playAnimation("player", "left", true)
+    end
+
+    if getPropertyFromClass('flixel.FlxG', "keys.justPressed.RIGHT") then
+        playAnimation("player", "right", true)
+    end
+
+    if getPropertyFromClass('flixel.FlxG', "keys.justPressed.DOWN") then
+        playAnimation("player", "down", true)
+    end
+
+    if getPropertyFromClass('flixel.FlxG', "keys.justPressed.UP") then
+        playAnimation("player", "up", true)
+    end
 end

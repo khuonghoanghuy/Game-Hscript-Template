@@ -3,21 +3,3 @@ function onCreatePost() {
 
     PlayState.luaImages.get("player").screenCenter();
 }
-
-function onUpdate() {
-    if (FlxG.keys.justPressed.LEFT) {
-        PlayState.luaImages.get("player").animation.play("left", true);
-    }
-    if (FlxG.keys.justPressed.RIGHT) {
-        PlayState.luaImages.get("player").animation.play("right", true);
-    }
-    if (FlxG.keys.justPressed.UP) {
-        PlayState.luaImages.get("player").animation.play("up", true);
-    }
-    if (FlxG.keys.justPressed.DOWN) {
-        PlayState.luaImages.get("player").animation.play("down", true);
-    }    
-    if (FlxG.keys.justPressed.SPACE) {
-        PlayState.luaImages.get("player").animation.play("idle", true);
-    }
-}
