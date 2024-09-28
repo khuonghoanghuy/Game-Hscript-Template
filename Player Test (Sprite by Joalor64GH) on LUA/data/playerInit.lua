@@ -1,5 +1,5 @@
 function onCreate() 
-    makeText("text", 0, 0, 0, "FNF Player Animation Test", 12);
+    makeText("text", 0, 0, 0, "FNF Player (Sprite By Joalor64GH) Animation Test", 12);
     addText("text");
 
     makeAnimationSprite("player", 0, 0, "player")
